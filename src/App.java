@@ -13,9 +13,10 @@ public class App {
         System.out.println("me llamo " + nombre_estudiante + " tengo " + edad + " años y peso " + peso);
         
         if (pppp) {
-        System.out.println("me pica el pn");
+        System.out.println("a");
         }else{
             System.out.println("pirobo");
         }
     }
 }
+
