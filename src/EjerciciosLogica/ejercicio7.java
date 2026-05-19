@@ -27,16 +27,19 @@ public class ejercicio7 {
                 puntos += 3;
                 racha++;
                 rachaDerrotas = 0;
+                System.out.println("\nPartido " + i + ": Ganado");
 
             }else if (resultado== 'e'){
                 puntos++;
                 racha++;
                 rachaDerrotas = 0;
+                System.out.println("\nPartido " + i + ": Empatado");
             }else if (resultado == 'p'){
                 rachaDerrotas++;
                 racha = 0;
+                System.out.println("\nPartido " + i + ": Perdido");
             }else{
-                System.out.println("Error: resultado no válido. Ingrese 'G', 'E' o 'P'.");
+                System.out.println("\nError: resultado no válido. Ingrese 'G', 'E' o 'P'.");
                 i--;
             }
             if (racha > topRacha){
@@ -46,8 +49,8 @@ public class ejercicio7 {
                 topRachaDerrotas = rachaDerrotas;
             }
         }
-        System.out.println("Puntos totales: " + puntos);
-        System.out.println("Mayor racha invicta: " + topRacha);
-        System.out.println("Peor racha de derrotas: " + topRachaDerrotas);
+        System.out.println("\nPuntos totales: " + puntos);
+        System.out.println("\nMayor racha invicta: " + topRacha);
+        System.out.println("\nPeor racha de derrotas: " + topRachaDerrotas);
     }
 }
