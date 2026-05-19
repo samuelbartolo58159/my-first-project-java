@@ -1,4 +1,4 @@
-package EjerciciosLogica;
+package ejerciciosLogica;
 
 import java.util.Scanner;
 
@@ -53,9 +53,11 @@ public class ejercicio3 {
             }
         }
 
-        if (contador1 == 2 || contador2 == 2) {
-            System.out.println("\ncontraseña interrumpida, intente otra vez");
-        } else {
+        if (contador1 == 2) {
+            System.out.println("\ncontraseña interrumpida, razon, tres digitos iguales seguidos, intente otra vez");
+        }else if (contador2 == 2) {
+            System.out.println("\ncontraseña interrumpida, razon, tres digitos consecutivos, intente otra vez");
+        }else {
             System.out.println("\ncontraseña " + contrasena + " segura");
         }
     }
