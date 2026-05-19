@@ -2,7 +2,7 @@ package ejerciciosPracticos;
 
 import java.util.Scanner;
 
-public class ejercicio1 {
+public class practica1 {
 
     static int contador_consecutivos = 0;
     static double temperatura = 0.0;
